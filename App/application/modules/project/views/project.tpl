@@ -36,8 +36,15 @@
 						<span class="note">roughly $83, 300 needed per day</span>
 					</section>					
 				</section>
+
 				<section id="project-button">
 					<a href="javascript:void(0);">Pledge<span>$1 minimum pledge</span></a>
+				</section>
+
+				<section id="reward-tiers">
+					<h2>Reward Tiers</h2>
+
+					<section></section>
 				</section>
 			</aside>
 		</section>

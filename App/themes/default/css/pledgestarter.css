@@ -203,6 +203,12 @@ section aside {
 section aside section {
   margin: 0;
 }
+section aside section h2 {
+  color: #111111;
+  font-size: 1.375em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 section aside #project-analytics {
   margin-bottom: 13px;
 }
@@ -232,8 +238,11 @@ section aside #project-analytics section span.note {
   margin-top: 5px;
 }
 section aside #project-button {
+  border-bottom: 1px solid #cccccc;
   color: white;
   font-size: 1.75em;
+  margin-bottom: 13px;
+  padding-bottom: 13px;
   text-transform: uppercase;
 }
 section aside #project-button a {
@@ -252,6 +261,11 @@ section aside #project-button a span {
   font-size: 0.392857143em;
   line-height: 1;
   text-transform: lowercase;
+}
+section aside #reward-tiers section {
+  background: #dddddd;
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: 15px;
 }
 @media only screen and (max-width: 1024px) {
   
