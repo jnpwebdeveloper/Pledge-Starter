@@ -31,7 +31,11 @@ class Migration_Projects_schema extends CI_Migration {
 				'constraint' => array('active', 'expired-notfunded', 'expired-funded', 'pending', 'draft'),
 				'default'    => 'active'
 			)
-			'launched' => array(
+			'start_date' => array(
+				'type'    => 'DATETIME',
+				'default' => NULL
+			),
+			'end_date' => array(
 				'type'    => 'DATETIME',
 				'default' => NULL
 			),
