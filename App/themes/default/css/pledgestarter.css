@@ -85,7 +85,15 @@ span.amp {
 .container {
   margin: 0 auto;
   max-width: 960px;
-  width: 92%;
+  *zoom: 1;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
 }
 audio,
 video,
@@ -108,9 +116,17 @@ header {
 header #header {
   margin: 0 auto;
   max-width: 960px;
-  width: 92%;
+  *zoom: 1;
   padding-top: 25px;
   text-align: center;
+}
+header #header:before,
+header #header:after {
+  content: "";
+  display: table;
+}
+header #header:after {
+  clear: both;
 }
 header #header h1 {
   color: #333333;
@@ -126,14 +142,21 @@ header #header h2 {
 section {
   margin: 0 auto;
   max-width: 960px;
-  width: 92%;
+  *zoom: 1;
+}
+section:before,
+section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
 }
 section article {
   display: inline;
   float: left;
   width: 60.416666667%;
   margin: 0 1.041666667%;
-  margin-left: 7.291666667%;
 }
 section article #project-image {
   margin-bottom: 30px;
@@ -166,11 +189,69 @@ section article #project-description {
   color: #212121;
   font-size: 1.125em;
 }
+section article #project-description p {
+  line-height: 145%;
+  margin: 0 0 38px 0;
+}
 section aside {
   display: inline;
   float: left;
   width: 29.166666667%;
   margin: 0 1.041666667%;
+  margin-left: 7.291666667%;
+}
+section aside section {
+  margin: 0;
+}
+section aside #project-analytics {
+  margin-bottom: 13px;
+}
+section aside #project-analytics section {
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 13px;
+  padding-bottom: 13px;
+}
+section aside #project-analytics section span {
+  display: block;
+}
+section aside #project-analytics section span.numeric {
+  color: #7875c8;
+  font-size: 1.875em;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+section aside #project-analytics section span.label {
+  color: #111111;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+section aside #project-analytics section span.note {
+  color: #666666;
+  font-size: 0.875em;
+  margin-top: 5px;
+}
+section aside #project-button {
+  color: white;
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+section aside #project-button a {
+  background: #01873f;
+  color: white;
+  display: block;
+  height: 55px;
+  line-height: 27px;
+  padding-top: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+section aside #project-button a span {
+  color: #eeeeee;
+  display: block;
+  font-size: 0.392857143em;
+  line-height: 1;
+  text-transform: lowercase;
 }
 @media only screen and (max-width: 1024px) {
   

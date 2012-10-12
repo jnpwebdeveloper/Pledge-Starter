@@ -18,6 +18,7 @@ class Project extends MY_Controller {
 
 	public function view($project_id)
 	{
+		$this->page_value('project', $this->project_m->get($project_id));
 		$this->parser->parse('project', $this->data);	
 	}
 }

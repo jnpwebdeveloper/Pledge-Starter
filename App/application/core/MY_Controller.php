@@ -15,7 +15,7 @@ class MY_Controller extends CI_Controller {
 		$this->load->library(array('wolfauth', 'parser'));
 
 		// Load needed helpers
-		$this->load->helper(array('url', 'form', 'sendmail', 'session', 'language'));
+		$this->load->helper(array('url', 'form', 'date', 'sendmail', 'session', 'language'));
 
 		$this->data['site'] = array(
 			'name'        => 'Pledgestarter',
