@@ -37,6 +37,11 @@ class MY_Controller extends CI_Controller {
 		}
 	}
 
+	public function page_value($key, $value)
+	{
+		$this->data[$key] = $value;
+	}
+
 	public function page_id($id)
 	{
 		$this->data['page']['bodyid'] = $id;
