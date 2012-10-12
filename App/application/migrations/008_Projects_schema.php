@@ -7,18 +7,41 @@ class Migration_Projects_schema extends CI_Migration {
 		$this->dbforge->add_field(array(
 			'id' => array(
 				'type'           => 'INT',
-				'constraint'     => 10,
+				'constraint'     => '10',
 				'unsigned'       => TRUE,
 				'auto_increment' => TRUE
 			),
 			'user_id' => array(
 				'type'       => 'INT',
-				'constraint' => 10,
+				'constraint' => '10',
 				'unsigned'   => TRUE
 			),
 			'name' => array(
 				'type'           => 'VARCHAR',
-				'constraint'     => 255
+				'constraint'     => '255'
+			),
+			'slug' => array(
+				'type' => 'VARCHAR',
+				'constraint' => '255'
+			),
+			'funding_target' => array(
+				'type' => 'DECIMAL',
+				'constraint' => '10,2',
+				'default' => '0.00'
+			),
+			'funding_current' => array(
+				'type' => 'DECIMAL',
+				'constraint' => '10,2',
+				'default' => '0.00'
+			),
+			'country_id' => array(
+				'type'       => 'INT',
+				'constraint' => '10',
+				'default'    => '0'
+			),
+			'city' => array(
+				'type'       => 'VARCHAR',
+				'constraint' => '255'
 			),
 			'short_description' => array(
 				'type' => 'TEXT'
