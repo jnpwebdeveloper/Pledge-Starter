@@ -79,7 +79,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'email', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('database', 'wolfauth', 'parser');
+$autoload['libraries'] = array('database');
 
 
 /*
@@ -95,7 +95,7 @@ $autoload['libraries'] = array('database', 'wolfauth', 'parser');
 |	$autoload['drivers'] = array('session', 'cache');
 */
 
-$autoload['drivers'] = array('session');
+$autoload['drivers'] = array();
 
 
 /*
@@ -107,7 +107,7 @@ $autoload['drivers'] = array('session');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'form', 'sendmail', 'session', 'language');
+$autoload['helper'] = array();
 
 
 /*

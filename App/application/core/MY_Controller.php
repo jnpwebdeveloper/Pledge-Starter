@@ -8,12 +8,21 @@ class MY_Controller extends CI_Controller {
 	{
 		parent::__construct();
 
+		// Load the session driver
+		$this->load->driver('session');
+
+		// Load needed libraries
+		$this->load->library(array('wolfauth', 'parser'));
+
+		// Load needed helpers
+		$this->load->helper(array('url', 'form', 'sendmail', 'session', 'language'));
+
 		$this->data['site'] = array(
-			'name'        => 'Bandlytics',
-			'description' => 'Music analytics for artists and record labels.'
+			'name'        => 'Pledgestarter',
+			'description' => 'An open source and simple PHP driven Kickstarter clone.'
 		);
 
-		$this->parser->set_theme('bandlytics');
+		$this->parser->set_theme('default');
 	}
 
 	public function site_name($name = '')
