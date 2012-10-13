@@ -40,6 +40,11 @@ class Migration_Rewards_schema extends CI_Migration {
 				'constraint' => array('active', 'soldout'),
 				'default'    => 'active'
 			),
+			'type' => array(
+				'type'       => 'ENUM',
+				'constraint' => array('standard', 'vip'),
+				'default'    => 'standard'
+			),
 			'created TIMESTAMP DEFAULT CURRENT_TIMESTAMP',
 		));
 
