@@ -23,7 +23,7 @@ class Migration_Rewards_schema extends CI_Migration {
 			'description' => array(
 				'type' => 'TEXT'
 			),
-			'price' => array(
+			'minimum_pledge' => array(
 				'type' => 'DECIMAL',
 				'constraint' => array(10,2),
 				'default' => 0,
